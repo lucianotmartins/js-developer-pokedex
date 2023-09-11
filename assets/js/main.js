@@ -7,6 +7,7 @@ let offset = 0;
 
 function convertPokemonToLi(pokemon) {
     return `
+    <a href="detalhes.html">    
         <li class="pokemon ${pokemon.type}">
             <span class="number">#${pokemon.number}</span>
             <span class="name">${pokemon.name}</span>
@@ -16,10 +17,11 @@ function convertPokemonToLi(pokemon) {
                     ${pokemon.types.map((type) => `<li class="type ${type}">${type}</li>`).join('')}
                 </ol>
 
-                <img src="${pokemon.photo}"
+                 <img src="${pokemon.photo}"
                      alt="${pokemon.name}">
             </div>
-        </li>
+        </li>  
+            </a>
     `
 }
 
@@ -44,4 +46,5 @@ loadMoreButton.addEventListener('click', () => {
     } else {
         loadPokemonItens(offset, limit)
     }
+
 })

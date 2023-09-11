@@ -1,8 +1,22 @@
+.corpo  {
+    background-image: url(https://c4.wallpaperflare.com/wallpaper/724/474/485/pokemon-go-logo-minimalism-wallpaper-preview.jpg);
+ 
+}
+
+.corpo .content h1, h2, p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 .pokemonImage {
-    background-color: blue;
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 25rem;
+}
+
+#idPokeName {
+    text-transform: capitalize;
 }
 
