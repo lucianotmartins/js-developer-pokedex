@@ -16,7 +16,24 @@
     border-radius: 25rem;
 }
 
+.pokemonImage #idPokeImage {
+    width: 250px;
+    height: 200px;
+
+}
+
 #idPokeName {
     text-transform: capitalize;
 }
 
+.pagination {
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.buttonVoltar {
+    color: black;
+    background-color: red;
+    border-radius: 25rem;
+}
